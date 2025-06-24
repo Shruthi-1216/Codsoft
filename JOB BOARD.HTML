@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Board</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f5f9fc;
+    }
+
+    header {
+      background: #007bff;
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-post {
+      background-color: #28a745;
+      padding: 10px 15px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #007bff, #339af0);
+      padding: 60px 40px;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn-upload {
+      background-color: #28a745;
+      padding: 12px 20px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .hero-img {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .search-box {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 900px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .search-box input,
+    .search-box select {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-box button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Job Board</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Browse Job</a>
+      <a href="#">Pages</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#" class="btn-post">Post a Job</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p>4536+ Jobs listed</p>
+      <h2>Find your Dream Job</h2>
+      <p>We provide online instant cash loans with quick approval that suit your term length.</p>
+      <a href="#" class="btn-upload">Upload Your Resume</a>
+    </div>
+    <div class="hero-img">
+      <img src="jb.jpg" alt="Job Board Image">
+    </div>
+  </section>
+
+  <section class="search-box">
+    <input type="text" placeholder="Search keyword" />
+    <input type="text" placeholder="Location" />
+    <select>
+      <option>Category</option>
+      <option>IT</option>
+      <option>Design</option>
+      <option>Marketing</option>
+    </select>
+    <button>Find Job</button>
+  </section>
+
+</body>
+</html>
