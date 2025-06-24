@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Question</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#66CDAA, #20B2AA);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .quiz-container {
+      background: #FFDAB9;
+      border-radius: 20px;
+      width: 600px;
+      padding: 30px;
+      position: relative;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .question-number {
+      color: #555;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .option {
+      background: white;
+      border: 2px solid #e0f0f0;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .option:hover {
+      background: #228B22;
+    }
+
+   
+    .option span {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* Decorative images */
+    .decor {
+      position: absolute;
+      width: 60px;
+    }
+
+    .plant { top: -30px; left: -30px; }
+    .orange { top: 50px; right: -20px; }
+    .banana { top: 120px; right: -30px; }
+    .shoe { bottom: 40px; left: -30px; }
+    .bike { bottom: 20px; right: -20px; width: 100px; }
+    .flower { bottom: -20px; left: 40%; width: 50px; }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="question-number">Question 1/13</div>
+    <div class="question-text">
+      HAVE YOU PRACTICED SPORT OR ANY PHYSICAL ACTIVITY OUT OF YOUR WORKING HOURS AT LEAST 30 MIN OR MORE DURING THE LAST MONTH?
+    </div>
+    <div class="option"><span>A</span>3 times or more per week</div>
+    <div class="option selected"><span>B</span>1 or 2 times per week</div>
+    <div class="option"><span>C</span>Less than 4 times per month</div>
+    <div class="option"><span>D</span>I don’t practise sport during the month</div>
+
+   
+  </div>
+</body>
+</html>
